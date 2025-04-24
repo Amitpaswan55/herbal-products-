@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herbal product</title>
+    <!-- ======================================= -->
+    <!-- <link rel="icon" type="png" href="img/favicon-32x32.png"> -->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <!--------------------------------------- cdjn link for icon------------------------------------------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="box-1">
+            <img src="logo-1.png" alt="" id="img-1">
+        </div>
+        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="about.html">About <span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="productpage2.html">Product <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle box-2" href="#" role="button" data-toggle="dropdown"
+                        aria-expanded="false">
+                        Contact
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="" class="dropdown-item"><i class="fa-solid fa-phone fa-lg"></i> Call us now - <br>+65
+                            686565265</a>
+                        <a class="dropdown-item"
+                            href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&ifkv=AaSxoQzCc0yFNTIqmVMRojILbQQWpTRPeJwUUM2rIIXLE_4WfnQEhl3Xs0_HtJY4gvmWAF7bQs7FPg&osid=1&passive=1209600&service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S1275994016%3A1715718112928199&ddm=0">Gmail+</a>
+                        <a class="dropdown-item" href="https://twitter.com/i/flow/login">Twitter</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link " href="service.html">supplyier<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="search-li">
+                    <div class="boxsearch-product">
+                        <input type="search" class="search-engin" placeholder="search">
+                        <a href=""><i class="fa-solid fa-magnifying-glass" id="search-icon-1"></i></a>
+
+                    </div>
+                </li>
+            </ul>
+            <div class="box-user">
+                <i class="fa-solid fa-user fa-bounce fa-lg" style="color: #43b15f;"></i><a href="sign-out.html">Login
+                    <span class="span-1">/</span>
+                    <a href="sign-in.html">sign-up</a></a>
+            </div>
+            <div class="box-wishlist-1">
+                <a href=""><i class="fa-regular fa-heart" id="wslt"></i></a>
+                <a href="cart-list.html"><i class="fa-solid fa-cart-shopping" style="color: #1A4D2E;" id="wslt"></i>
+                </a><span>0</span>
+            </div>
+
+        </div>
+
+    </nav>
+    <section class="about-sec-1" id="kk">
+        <div class="abt-box-1">
+            <h1>CART
+            </h1>
+        </div>
+    </section>
+
+    <!-- ----------------------section---cart------------------------------------------ -->
+    <section class=" sec-cart">
+        <div class="container-fluid">
+            <!-- <div class="massed-popup">
+                <ul class="woocommerce-error" role="alert">
+                    <li>
+                        Please enter a coupon code. </li>
+                </ul>
+            </div> -->
+
+            <div class="about-form-box">
+                <form class="form-cart-1" action="#" method="post">
+                    <table class="table-cart" width="920px">
+                        <th class="product-remove"><span class="screen-reader-text"></span></th>
+                        <th class="product-thumbnail"><span class="screen-reader-text"></span></th>
+                        <th rowspan="=2" class="t-head-box">Product</th>
+                        <th class="t-head-box">Price</th>
+                        <th class="t-head-box">Quantity</th>
+                        <th class="t-head-box">Subtotal</th>
+                        <tr>
+
+                            <td class="product-remove">
+                                <a href="#" class="remove" aria-label="Remove this item" data-product_id=""
+                                    data-product_sku=""><i class="fa-solid fa-trash" style="color: #4a967f;"></i></a>
+                            </td>
+                            <td class="product-thumbnail">
+                                <a href="#"><img fetchpriority="high" decoding="async"
+                                        src="https://sktperfectdemo.com/themepack/naturopathy/wp-content/uploads/2023/05/product-img-6.jpg"
+                                        class="img-size-box" alt=""></a>
+                            </td>
+                            <td class="product-name" data-title="Product">
+                                <a href="#">Controlling
+                                    Blood Pressure</a>
+                            </td>
+                            <td class="product-price" data-title="Price" style="text-align: center;">
+                                <span class="woocommerce-Price-amount amount"><bdi><span
+                                            class="woocommerce-Price-currencySymbol">Rs.</span>26.00</bdi></span>
+                            </td>
+
+                            <td class="product-quantity" data-title="Quantity">
+                                <div class="quantity">
+                                    <!-- <label class="screen-reader-text" for="quantity_662dffbad05eb">Controlling Blood Pressure
+                                quantity</label> -->
+                                    <input type="number" id="" class="Qnty-1" name="" value="1" title="Qty" size="4"
+                                        min="0" max="" step="1" placeholder="" inputmode="numeric" autocomplete="off">
+                                </div>
+                            </td>
+
+                            <td class="product-subtotal" data-title="Subtotal" style="text-align: center;">
+                                <span class="Price-amount"><bdi><span
+                                            class="currencySymbol">Rs.</span>52.00</bdi></span>
+                            </td>
+
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div class="box-cart-total">
+                <h2>Cart total</h2>
+                <!-- <div class="box-cart-total-2"> -->
+                <div class="box-rw">
+                    <div class="cl-box-1">Subtotal</div>
+                    <div class="cl-box-2">Rs.43.00</div>
+                    <div class="cl-box-1">Total</div>
+                    <div class="cl-box-2">Rs.43.00</div>
+                </div>
+
+                <button class="btn-ct" onclick="document.location='check-out.html'">PROCEED TO CHECKOUT</button>
+            </div>
+        </div>
+    </section>
+    <!-- ----------------------section-10------------------------------------------ -->
+
+    <section class="container-fluid" id="cnt-fld-10">
+        <div class="box-16">
+            <h2>Subscribe our news</h2><br>
+            <div class="box-17">
+                <span> <input type="email" placeholder="Enter You Email" id="search-btn"><button
+                        id="btn-8">Search</button></span>
+
+            </div>
+        </div>
+        <div class="container" id="cnt-10">
+            <div class="row" id="rw-26">
+                <div class="col-sm" id="cl-34">
+                    <h3>Quick Link</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">Abot</a></li>
+                        <li><a href="service.html">Supplyier</a></li>
+                        <li><a href="productpage2.html">Product</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm" id="cl-34">
+                    <img src="footer-logo.png" alt=""><br>
+                    <p>Nunc condimentum purus conse quat antvehicula, a porttitor nibh facilisis. Etiam id sagittielt
+                        sceleri sque
+                        urnaauris vitae.</p>
+                    <div class="box-18">
+                         <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f fa-lg" id="facbook-icon"></i></a>
+                        <a href="https://twitter.com/i/flow/login"><i class="fa-brands fa-twitter fa-lg"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram fa-lg"></i></a>
+                        <a href="https://www.youtube.com/"><i class="fa-brands fa-square-youtube fa-lg"></i></a>
+                        <a href="https://in.pinterest.com/"><i class="fa-brands fa-pinterest fa-lg"></i></a>
+                        <a href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin-in fa-lg"></i></a>
+                    </div>
+
+                </div>
+                <div class="col-sm" id="cl-34">
+                    <h3 style="margin-top: -50px;">Contact Info</h3><br>
+                    <p id="p-1" style="inline-size: 200px;">Street 238,52 tempor
+                        Donec ultricies mattis nulla
+                        risus tristique ut.</p>
+                    <h4>+1 500 000 0000
+                        <br>
+                        demo@lorem.com
+                    </h4>
+                </div>
+            </div>
+            <p class="p">© Copyright 2023 SKT Naturopathy. - Design by Chax Roy</p>
+        </div>
+
+    </section>
+
+</body>
+
+</html>

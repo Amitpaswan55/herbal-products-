@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <!--------------------------------------- cdjn link for icon------------------------------------------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- =======-css-link--=========================================== -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="product2style.css">
+    <link rel="stylesheet" href="owl.carousel.css">
+    <link rel="stylesheet" href="owl.theme.green.css">
+    <!------------------------------ js link--------------------------------------- -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="box-1">
+            <img src="logo-1.png" alt="" id="img-1">
+        </div>
+        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="about.html">About <span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="productpage2.html">Product <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle box-2" href="#" role="button" data-toggle="dropdown"
+                        aria-expanded="false">
+                        Contact
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="" class="dropdown-item"><i class="fa-solid fa-phone fa-lg"></i> Call us now - <br>+65
+                            686565265</a>
+                        <a class="dropdown-item"
+                            href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&ifkv=AaSxoQzCc0yFNTIqmVMRojILbQQWpTRPeJwUUM2rIIXLE_4WfnQEhl3Xs0_HtJY4gvmWAF7bQs7FPg&osid=1&passive=1209600&service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S1275994016%3A1715718112928199&ddm=0">Gmail+</a>
+                        <a class="dropdown-item" href="https://twitter.com/i/flow/login">Twitter</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link " href="service.html">supplyier<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="search-li">
+                    <div class="boxsearch-product">
+                        <input type="search" class="search-engin" placeholder="search">
+                        <a href=""><i class="fa-solid fa-magnifying-glass" id="search-icon-1"></i></a>
+
+                    </div>
+                </li>
+            </ul>
+            <div class="box-user">
+                <i class="fa-solid fa-user fa-bounce fa-lg" style="color: #43b15f;"></i><a href="sign-out.html">Login
+                    <span class="span-1">/</span>
+                    <a href="sign-in.html">sign-up</a></a>
+            </div>
+            <div class="box-wishlist-1">
+                <a href=""><i class="fa-regular fa-heart" id="wslt"></i></a>
+                <a href="cart-list.html"><i class="fa-solid fa-cart-shopping" style="color: #1A4D2E;" id="wslt"></i>
+                </a><span>0</span>
+            </div>
+
+        </div>
+
+    </nav>
+    <!-- ======================================================================================== -->
+    <section class="container-fluid" id="cnt-fld-20">
+        <div class="" id="cnt-20">
+            <div class=" row box-product2">
+                <div class="owl-carousel owl-theme box-owl-2">
+                    <div class="itemcntr">
+                        <div class="box-productpg-pdt-1">
+                            <div class="productpg-pdt-img">
+                                <img src="eye-vsn-8.png" alt="" id="pdtimg-1">
+                                <div class="drop-box-pdt-2">
+                                    <a href=""><button class="btn-6-pdtpg">Buy Now</button></a><br>
+                                    <!-- <a href=""><button class="btn-6-1">Buy Now</button></a> -->
+                                    <a href=""><i class="fa-regular fa-heart" id="wishlist-add"></i></a>
+                                    <a href=""><i class="fa-solid fa-heart" style="color: #0fc72e;"
+                                            id="wishlist-add"></i></a>
+                                </div>
+                            </div>
+                            <div class="productpg-pdt-text">
+                                <li style="list-style: none; margin-top: 20px;text-align: start; margin-left: 15px;">
+                                    <i class="fa-solid fa-star fa-sm" style="color: #f49e34;"></i>
+                                    <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i>
+                                </li>
+                                <a href="">
+                                    <p>
+                                        Herbal Green Tea With Lemon Extract <br>
+                                        Rs.100.00</p>
+                                </a>
+                                <p style="text-decoration-line: line-through; color: red;">Rs.127.00</p>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="itemcntr">
+                        <div class="box-productpg-pdt-1">
+                            <div class="productpg-pdt-img">
+                                <img src="skin-6.png" alt="" id="pdtimg-1">
+                                <div class="drop-box-pdt-2">
+                                    <a href=""><button class="btn-6-pdtpg">Buy Now</button></a><br>
+                                    <!-- <a href=""><button class="btn-6-1">Buy Now</button></a> -->
+                                    <a href=""><i class="fa-regular fa-heart" id="wishlist-add"></i></a>
+                                    <a href=""><i class="fa-solid fa-heart" style="color: #0fc72e;"
+                                            id="wishlist-add"></i></a>
+                                </div>
+                            </div>
+                            <div class="productpg-pdt-text">
+                                <li style="list-style: none; margin-top: 20px;text-align: start; margin-left: 15px;">
+                                    <i class="fa-solid fa-star fa-sm" style="color: #f49e34;"></i>
+                                    <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i>
+                                </li>
+                                <a href="">
+                                    <p>
+                                        Herbal Green Tea With Lemon Extract <br>
+                                        Rs.90.00</p>
+                                </a>
+                                <p style="text-decoration-line: line-through; color: red;">Rs.207.00</p>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="itemcntr">
+                        <div class="box-productpg-pdt-1">
+                            <div class="productpg-pdt-img">
+                                <img src="eye-vsn-5.png" alt="" id="pdtimg-1">
+                                <div class="drop-box-pdt-2">
+                                    <a href=""><button class="btn-6-pdtpg">Buy Now</button></a><br>
+                                    <!-- <a href=""><button class="btn-6-1">Buy Now</button></a> -->
+                                    <a href=""><i class="fa-regular fa-heart" id="wishlist-add"></i></a>
+                                    <a href=""><i class="fa-solid fa-heart" style="color: #0fc72e;"
+                                            id="wishlist-add"></i></a>
+                                </div>
+                            </div>
+                            <div class="productpg-pdt-text">
+                                <li style="list-style: none; margin-top: 20px;text-align: start; margin-left: 15px;">
+                                    <i class="fa-solid fa-star fa-sm" style="color: #f49e34;"></i>
+                                    <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i>
+                                </li>
+                                <a href="">
+                                    <p>
+                                        Herbal Green Tea With Lemon Extract <br>
+                                        Rs.70.00</p>
+                                </a>
+                                <p style="text-decoration-line: line-through; color: red;">Rs.107.00</p>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="itemcntr">
+                        <div class="box-productpg-pdt-1">
+                            <div class="productpg-pdt-img">
+                                <img src="eye-vsn-7.png" alt="" id="pdtimg-1">
+                                <div class="drop-box-pdt-2">
+                                    <a href=""><button class="btn-6-pdtpg">Buy Now</button></a><br>
+                                    <!-- <a href=""><button class="btn-6-1">Buy Now</button></a> -->
+                                    <a href=""><i class="fa-regular fa-heart" id="wishlist-add"></i></a>
+                                    <a href=""><i class="fa-solid fa-heart" style="color: #0fc72e;"
+                                            id="wishlist-add"></i></a>
+                                </div>
+                            </div>
+                            <div class="productpg-pdt-text">
+                                <li style="list-style: none; margin-top: 20px;text-align: start; margin-left: 15px;">
+                                    <i class="fa-solid fa-star fa-sm" style="color: #f49e34;"></i>
+                                    <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i>
+                                </li>
+                                <a href="">
+                                    <p>
+                                        Herbal Green Tea With Lemon Extract <br>
+                                        Rs.105.00</p>
+                                </a>
+                                <p style="text-decoration-line: line-through; color: red;">Rs.307.00</p>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="itemcntr">
+                        <div class="box-productpg-pdt-1">
+                            <div class="productpg-pdt-img">
+                                <img src="eye-vsn-6.png" alt="" id="pdtimg-1">
+                                <div class="drop-box-pdt-2">
+                                    <a href=""><button class="btn-6-pdtpg">Buy Now</button></a><br>
+                                    <!-- <a href=""><button class="btn-6-1">Buy Now</button></a> -->
+                                    <a href=""><i class="fa-regular fa-heart" id="wishlist-add"></i></a>
+                                    <a href=""><i class="fa-solid fa-heart" style="color: #0fc72e;"
+                                            id="wishlist-add"></i></a>
+                                </div>
+                            </div>
+                            <div class="productpg-pdt-text">
+                                <li style="list-style: none; margin-top: 20px;text-align: start; margin-left: 15px;">
+                                    <i class="fa-solid fa-star fa-sm" style="color: #f49e34;"></i>
+                                    <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star fa-sm" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i>
+                                </li>
+                                <a href="">
+                                    <p>
+                                        Herbal Green Tea With Lemon Extract <br>
+                                        Rs.109.00</p>
+                                </a>
+                                <p style="text-decoration-line: line-through; color: red;">Rs.150.00</p>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+
+    </section>
+
+    <!-- ===================---section-21----================== -->
+    <!-- <section class="container-fluid" id="cnt-fld-21">
+        <div class="" id="cnt-21">
+            
+        </div>
+
+
+        </section> -->
+
+
+        <section class="container-fluid" id="cnt-fld-21">
+            <p>PRODUCT</p>
+            <H2><strong>We Are Here To Give You The <br>Best Ayurvedic Products</strong></H2>
+            <div class="container-sm" id="cnt-21">
+                <div class="row" id="rw-exp">
+                    <div class="row" id="hair">
+                        <div class="col" id="cl-19">
+                            <div class="img-box-1">
+                                <img src="hair-img-1.png" alt="" id="img-12">
+                                <a href=""><h5>Neem Shampoo</h5></a>
+                                <p style="text-decoration-line: line-through; color: red;">Rs.178.00</p>
+                                <p>Rs.147.00</p>
+                                <div class="drop-box">
+                                    <a href=""><button class="btn-6">Buy Now</button></a><br>
+                                    <!-- <a href=""><button class="btn-6-1">Buy Now</button></a> -->
+                                    <a href=""><i class="fa-regular fa-heart" id="wishlist-add"></i></a>
+                                    <a href=""><i class="fa-solid fa-heart" style="color: #0fc72e;"  id="wishlist-add"></i></a>                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" id="cl-19">
+                            <div class="img-box-1">
+                                <img src="hair-img-2.png" alt="" id="img-12">
+                                <a href=""><h5>Rosemary Hair Tonic</h5></a>
+                                <p style="text-decoration-line: line-through; color: red;">Rs.148.00</p>
+                                <p>Rs.135.00</p>
+                                <div class="drop-box">
+                                    <a href=""><button class="btn-6">Buy Now</button></a><br>
+                                    <!-- <a href=""><button class="btn-6-1">Buy Now</button></a> -->
+                                    <a href=""><i class="fa-regular fa-heart" id="wishlist-add"></i></a>
+                                    <a href=""><i class="fa-solid fa-heart" style="color: #0fc72e;"  id="wishlist-add"></i></a>                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" id="cl-19">
+                            <div class="img-box-1">
+                                <img src="hair-img-3.png" alt="" id="img-12">
+                                <a href=""><h5>Brahmi Hair Oil</h5></a>
+                                <p style="text-decoration-line: line-through; color: red;">Rs.135.00</p>
+                                <p>Rs.127.00</p>
+                                <div class="drop-box">
+                                    <a href=""><button class="btn-6">Buy Now</button></a><br>
+                                    <!-- <a href=""><button class="btn-6-1">Buy Now</button></a> -->
+                                    <a href=""><i class="fa-regular fa-heart" id="wishlist-add"></i></a>
+                                    <a href=""><i class="fa-solid fa-heart" style="color: #0fc72e;"  id="wishlist-add"></i></a>                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" id="cl-19">
+                            <div class="img-box-1">
+                                <img src="hair-img-4.png" alt="" id="img-12">
+                                <h5>Jatamansi Hair Serum</h5>
+                                <p style="text-decoration-line: line-through; color: red;">Rs.207.00</p>
+                                <p>Rs.107.00</p>
+                                <div class="drop-box">
+                                    <a href=""><button class="btn-6">Buy Now</button></a><br>
+                                    <!-- <a href=""><button class="btn-6-1">Buy Now</button></a> -->
+                                    <a href=""><i class="fa-regular fa-heart" id="wishlist-add"></i></a>
+                                    <a href=""><i class="fa-solid fa-heart" style="color: #0fc72e;"  id="wishlist-add"></i></a>                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" id="Stomach">
+                        <div class="col" id="cl-19">
+                            <div class="img-box-1">
+                                <img src="belly-1.png" alt="" id="img-12">
+                                <a href=""><h5>Hingvastak Churna</h5></a>
+                                <p style="text-decoration-line: line-through; color: red;">Rs.17.00</p>
+                                <p>Rs.17.00</p>
+                                <div class="drop-box">
+                                    <a href=""><button class="btn-6">Buy Now</button></a><br>
+                                    <!-- <a href=""><button class="btn-6-1">Buy Now</button></a> -->
+                                    <a href=""><i class="fa-regular fa-heart" id="wishlist-add"></i></a>
+                                    <a href=""><i class="fa-solid fa-heart" style="color: #0fc72e;"  id="wishlist-add"></i></a>                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" id="cl-19">
+                            <div class="img-box-1">
+                                <img src="belly-2.png" alt="" id="img-12">
+                               <a href=""> <h5>Dill Seed Tea</h5></a>
+                                <p style="text-decoration-line: line-through; color: red;">Rs.17.00</p>
+                                <p>Rs.17.00</p>
+                                <div class="drop-box">
+                                    <a href=""><button class="btn-6">Buy Now</button></a><br>
+                                    <!-- <a href=""><button class="btn-6-1">Buy Now</button></a> -->
+                                    <a href=""><i class="fa-regular fa-heart" id="wishlist-add"></i></a>
+                                    <a href=""><i class="fa-solid fa-heart" style="color: #0fc72e;"  id="wishlist-add"></i></a>                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" id="cl-19">
+                            <div class="img-box-1">
+                                <img src="belly-3.png" alt="" id="img-12">
+                                <a href=""><h5>Cumin Water</h5></a>
+                                <p style="text-decoration-line: line-through; color: red;">Rs.177.00</p>
+                                <p>Rs.127.00</p>
+                                <div class="drop-box">
+                                    <a href=""><button class="btn-6">Buy Now</button></a><br>
+                                    <!-- <a href=""><button class="btn-6-1">Buy Now</button></a> -->
+                                    <a href=""><i class="fa-regular fa-heart" id="wishlist-add"></i></a>
+                                    <a href=""><i class="fa-solid fa-heart" style="color: #0fc72e;"  id="wishlist-add"></i></a>                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" id="cl-19">
+                            <div class="img-box-1">
+                                <img src="belly-5.png" alt="" id="img-12">
+                                <a href=""><h5>Peppermint Oil Capsules</h5></a>
+                                <p style="text-decoration-line: line-through; color: red;">Rs.157.00</p>
+                                <p>Rs.107.00</p>
+                                <div class="drop-box">
+                                    <a href=""><button class="btn-6">Buy Now</button></a><br>
+                                    <!-- <a href=""><button class="btn-6-1">Buy Now</button></a> -->
+                                    <a href=""><i class="fa-regular fa-heart" id="wishlist-add"></i></a>
+                                    <a href=""><i class="fa-solid fa-heart" style="color: #0fc72e;"  id="wishlist-add"></i></a>                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" id="skin">
+                        <div class="col" id="cl-19">
+                            <div class="img-box-1">
+                                <img src="skin-1.png" alt="" id="img-12">
+                                <a href=""><h5>Turmeric Face Mask</h5></a>
+                                <p style="text-decoration-line: line-through; color: red;">Rs.177.00</p>
+                                <p>Rs.137.00</p>
+                                <div class="drop-box">
+                                    <a href=""><button class="btn-6">Buy Now</button></a><br>
+                                    <!-- <a href=""><button class="btn-6-1">Buy Now</button></a> -->
+                                    <a href=""><i class="fa-regular fa-heart" id="wishlist-add"></i></a>
+                                    <a href=""><i class="fa-solid fa-heart" style="color: #0fc72e;"  id="wishlist-add"></i></a>                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" id="cl-19">
+                            <div class="img-box-1">
+                                <img src="skin-2.png" alt="" id="img-12">
+                                <a href=""><h5>Kumkumadi Oil</h5></a>
+                                <p style="text-decoration-line: line-through; color: red;">Rs.167.00</p>
+                                <p>Rs.117.00</p>
+                                <div class="drop-box">
+                                    <a href=""><button class="btn-6">Buy Now</button></a><br>
+                                    <!-- <a href=""><button class="btn-6-1">Buy Now</button></a> -->
+                                    <a href=""><i class="fa-regular fa-heart" id="wishlist-add"></i></a>
+                                    <a href=""><i class="fa-solid fa-heart" style="color: #0fc72e;"  id="wishlist-add"></i></a>                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" id="cl-19">
+                            <div class="img-box-1">
+                                <img src="skin-3.png" alt="" id="img-12">
+                                <a href=""><h5>Turmeric Face Mask</h5></a>
+                                <p style="text-decoration-line: line-through; color: red;">Rs.177.00</p>
+                                <p>Rs.137.00</p>
+                                <div class="drop-box">
+                                    <a href=""><button class="btn-6">Buy Now</button></a><br>
+                                    <!-- <a href=""><button class="btn-6-1">Buy Now</button></a> -->
+                                    <a href=""><i class="fa-regular fa-heart" id="wishlist-add"></i></a>
+                                    <a href=""><i class="fa-solid fa-heart" style="color: #0fc72e;"  id="wishlist-add"></i></a>                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" id="cl-19">
+                            <div class="img-box-1">
+                                <img src="skin-4.png" alt="" id="img-12">
+                                <a href=""><h5>Manjistha Powder</h5></a>
+                                <p style="text-decoration-line: line-through; color: red;">Rs.197.00</p>
+                                <p>Rs.127.00</p>
+                                <div class="drop-box">
+                                    <a href=""><button class="btn-6">Buy Now</button></a><br>
+                                    <!-- <a href=""><button class="btn-6-1">Buy Now</button></a> -->
+                                    <a href=""><i class="fa-regular fa-heart" id="wishlist-add"></i></a>
+                                    <a href=""><i class="fa-solid fa-heart" style="color: #0fc72e;"  id="wishlist-add"></i></a>                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" id="Gastric">
+                        <div class="col" id="cl-19">
+                            <div class="img-box-1">
+                                <img src="gstic-1.png" alt="" id="img-12">
+                                <a href=""><h5>Pudina (Mint) Capsules</h5></a>
+                                <p style="text-decoration-line: line-through; color: red;">Rs.187.00</p>
+                                <p>Rs.167.00</p>
+                                <div class="drop-box">
+                                    <a href=""><button class="btn-6">Buy Now</button></a><br>
+                                    <!-- <a href=""><button class="btn-6-1">Buy Now</button></a> -->
+                                    <a href=""><i class="fa-regular fa-heart" id="wishlist-add"></i></a>
+                                    <a href=""><i class="fa-solid fa-heart" style="color: #0fc72e;"  id="wishlist-add"></i></a>                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" id="cl-19">
+                            <div class="img-box-1">
+                                <img src="gstic-2.png" alt="" id="img-12">
+                               <a href=""><h5>Triphala Churna</h5></a>
+                                <p style="text-decoration-line: line-through; color: red;">Rs.147.00</p>
+                                <p>Rs.137.00</p>
+                                <div class="drop-box">
+                                    <a href=""><button class="btn-6">Buy Now</button></a><br>
+                                    <!-- <a href=""><button class="btn-6-1">Buy Now</button></a> -->
+                                    <a href=""><i class="fa-regular fa-heart" id="wishlist-add"></i></a>
+                                    <a href=""><i class="fa-solid fa-heart" style="color: #0fc72e;"  id="wishlist-add"></i></a>                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" id="cl-19">
+                            <div class="img-box-1">
+                                <img src="gstic-3.png" alt="" id="img-12">
+                                <a href=""><h5>Aloe Vera Juice</h5></a>
+                                <p style="text-decoration-line: line-through; color: red;">Rs.179.00</p>
+                                <p>Rs.134.00</p>
+                                <div class="drop-box">
+                                    <a href=""><button class="btn-6">Buy Now</button></a><br>
+                                    <!-- <a href=""><button class="btn-6-1">Buy Now</button></a> -->
+                                    <a href=""><i class="fa-regular fa-heart" id="wishlist-add"></i></a>
+                                    <a href=""><i class="fa-solid fa-heart" style="color: #0fc72e;"  id="wishlist-add"></i></a>                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" id="cl-19">
+                            <div class="img-box-1">
+                                <img src="gstic-4.png" alt="" id="img-12">
+                                <a href=""><h5>Haritaki Powder</h5></a>
+                                <p style="text-decoration-line: line-through; color: red;">Rs.191.00</p>
+                                <p>Rs.137.00</p>
+                                <div class="drop-box">
+                                    <a href=""><button class="btn-6">Buy Now</button></a><br>
+                                    <!-- <a href=""><button class="btn-6-1">Buy Now</button></a> -->
+                                    <a href=""><i class="fa-regular fa-heart" id="wishlist-add"></i></a>
+                                    <a href=""><i class="fa-solid fa-heart" style="color: #0fc72e;"  id="wishlist-add"></i></a>                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" id="BodyPain">
+                        <div class="col" id="cl-19">
+                            <div class="img-box-1">
+                                <img src="bdy-pn-1.png" alt="" id="img-12">
+                                <a href=""><h5>Maharasnadi Kwath</h5></a>
+                                <p style="text-decoration-line: line-through; color: red;">Rs.176.00</p>
+                                <p>Rs.134.00</p>
+                                <div class="drop-box">
+                                    <a href=""><button class="btn-6">Buy Now</button></a><br>
+                                    <!-- <a href=""><button class="btn-6-1">Buy Now</button></a> -->
+                                    <a href=""><i class="fa-regular fa-heart" id="wishlist-add"></i></a>
+                                    <a href=""><i class="fa-solid fa-heart" style="color: #0fc72e;"  id="wishlist-add"></i></a>                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" id="cl-19">
+                            <div class="img-box-1">
+                                <img src="bdy-pn-2.png" alt="" id="img-12">
+                                <a href=""><h5>Guggulu Resin</h5></a>
+                                <p style="text-decoration-line: line-through; color: red;">Rs.197.00</p>
+                                <p>Rs.134.00</p>
+                                <div class="drop-box">
+                                    <a href=""><button class="btn-6">Buy Now</button></a><br>
+                                    <!-- <a href=""><button class="btn-6-1">Buy Now</button></a> -->
+                                    <a href=""><i class="fa-regular fa-heart" id="wishlist-add"></i></a>
+                                    <a href=""><i class="fa-solid fa-heart" style="color: #0fc72e;"  id="wishlist-add"></i></a>                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" id="cl-19">
+                            <div class="img-box-1">
+                                <img src="bdy-pn-3.png" alt="" id="img-12">
+                                <a href=""><h5>Dashmoolarishta</h5></a>
+                                <p style="text-decoration-line: line-through; color: red;">Rs.286.00</p>
+                                <p>Rs.134.00</p>
+                                <div class="drop-box">
+                                    <a href=""><button class="btn-6">Buy Now</button></a><br>
+                                    <!-- <a href=""><button class="btn-6-1">Buy Now</button></a> -->
+                                    <a href=""><i class="fa-regular fa-heart" id="wishlist-add"></i></a>
+                                    <a href=""><i class="fa-solid fa-heart" style="color: #0fc72e;"  id="wishlist-add"></i></a>                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" id="cl-19">
+                            <div class="img-box-1">
+                                <img src="bdy-pn-4.png" alt="" id="img-12">
+                                <a href=""><h5>Devil's Claw Root Extract</h5></a>
+                                <p style="text-decoration-line: line-through; color: red;">Rs.377.00</p>
+                                <p>Rs.243.00</p>
+                                <div class="drop-box">
+                                    <a href=""><button class="btn-6">Buy Now</button></a><br>
+                                    <!-- <a href=""><button class="btn-6-1">Buy Now</button></a> -->
+                                    <a href=""><i class="fa-regular fa-heart" id="wishlist-add"></i></a>
+                                    <a href=""><i class="fa-solid fa-heart" style="color: #0fc72e;"  id="wishlist-add"></i></a>                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" id="EyeVision">
+                        <div class="col" id="cl-19">
+                            <div class="img-box-1">
+                                <img src="eye-vsn-1.png" alt="" id="img-12">
+                               <a href=""> <h5>Triphala Eye Wash*</h5></a>
+                                <p style="text-decoration-line: line-through; color: red;">Rs.348.00</p>
+                                <p>Rs.307.00</p>
+                                <div class="drop-box">
+                                    <a href=""><button class="btn-6">Buy Now</button></a><br>
+                                    <!-- <a href=""><button class="btn-6-1">Buy Now</button></a> -->
+                                    <a href=""><i class="fa-regular fa-heart" id="wishlist-add"></i></a>
+                                    <a href=""><i class="fa-solid fa-heart" style="color: #0fc72e;"  id="wishlist-add"></i></a>                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" id="cl-19">
+                            <div class="img-box-1">
+                                <img src="eye-vsn-2.png" alt="" id="img-12">
+                                <a href=""><h5>Amla Juice</h5></a>
+                                <p style="text-decoration-line: line-through; color: red;">Rs.207.00</p>
+                                <p>Rs.157.00</p>
+                                <div class="drop-box">
+                                    <a href=""><button class="btn-6">Buy Now</button></a><br>
+                                    <!-- <a href=""><button class="btn-6-1">Buy Now</button></a> -->
+                                    <a href=""><i class="fa-regular fa-heart" id="wishlist-add"></i></a>
+                                    <a href=""><i class="fa-solid fa-heart" style="color: #0fc72e;"  id="wishlist-add"></i></a>                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" id="cl-19">
+                            <div class="img-box-1">
+                                <img src="eye-vsn-3.png" alt="" id="img-12">
+                                <a href=""><h5>Saffron Infusion</h5></a>
+                                <p style="text-decoration-line: line-through; color: red;">Rs.234.00</p>
+                                <p>Rs.152.00</p>
+                                <div class="drop-box">
+                                    <a href=""><button class="btn-6">Buy Now</button></a><br>
+                                    <!-- <a href=""><button class="btn-6-1">Buy Now</button></a> -->
+                                    <a href=""><i class="fa-regular fa-heart" id="wishlist-add"></i></a>
+                                    <a href=""><i class="fa-solid fa-heart" style="color: #0fc72e;"  id="wishlist-add"></i></a>                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" id="cl-19">
+                            <div class="img-box-1">
+                                <img src="eye-vsn-4.png" alt="" id="img-12">
+                                <a href=""><h5>Carrot Juice</h5></a>
+                                <p style="text-decoration-line: line-through; color: red;">Rs.197.00</p>
+                                <p>Rs.117.00</p>
+                                <div class="drop-box">
+                                    <a href=""><button class="btn-6">Buy Now</button></a><br>
+                                    <!-- <a href=""><button class="btn-6-1">Buy Now</button></a> -->
+                                    <a href=""><i class="fa-regular fa-heart" id="wishlist-add"></i></a>
+                                    <a href=""><i class="fa-solid fa-heart" style="color: #0fc72e;"  id="wishlist-add"></i></a>                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" id="BackPain">
+                        <div class="col" id="cl-19">
+                            <div class="img-box-1">
+                                <img src="bck-pn-1.png" alt="" id="img-12">
+                                <a href=""><h5>Eranda Taila (Castor Oil)</h5></a>
+                                <p style="text-decoration-line: line-through; color: red;">Rs.317.00</p>
+                                <p>Rs.187.00</p>
+                                <div class="drop-box">
+                                    <a href=""><button class="btn-6">Buy Now</button></a><br>
+                                    <!-- <a href=""><button class="btn-6-1">Buy Now</button></a> -->
+                                    <a href=""><i class="fa-regular fa-heart" id="wishlist-add"></i></a>
+                                    <a href=""><i class="fa-solid fa-heart" style="color: #0fc72e;"  id="wishlist-add"></i></a>                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" id="cl-19">
+                            <div class="img-box-1">
+                                <img src="bck-pn-2.png" alt="" id="img-12">
+                               <a href=""> <h5>Gandha Taila</h5></a>
+                                <p style="text-decoration-line: line-through; color: red;">Rs.358.00</p>
+                                <p>Rs.125.00</p>
+                                <div class="drop-box">
+                                    <a href=""><button class="btn-6">Buy Now</button></a><br>
+                                    <!-- <a href=""><button class="btn-6-1">Buy Now</button></a> -->
+                                    <a href=""><i class="fa-regular fa-heart" id="wishlist-add"></i></a>
+                                    <a href=""><i class="fa-solid fa-heart" style="color: #0fc72e;"  id="wishlist-add"></i></a>                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" id="cl-19">
+                            <div class="img-box-1">
+                                <img src="bck-pn-3.png" alt="" id="img-12">
+                                <a href=""><h5>Bala Ashwagandhadi Taila</h5></a>
+                                <p style="text-decoration-line: line-through; color: red;">Rs.289.00</p>
+                                <p>Rs.134.00</p>
+                                <div class="drop-box">
+                                    <a href=""><button class="btn-6">Buy Now</button></a><br>
+                                    <!-- <a href=""><button class="btn-6-1">Buy Now</button></a> -->
+                                    <a href=""><i class="fa-regular fa-heart" id="wishlist-add"></i></a>
+                                    <a href=""><i class="fa-solid fa-heart" style="color: #0fc72e;"  id="wishlist-add"></i></a>                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" id="cl-19">
+                            <div class="img-box-1">
+                                <img src="bck-pn-4.png" alt="" id="img-12">
+                                <a href=""><h5>Shallaki Capsules</h5></a>
+                                <p style="text-decoration-line: line-through; color: red;">Rs.179.00</p>
+                                <p>Rs.170.00</p>
+                                <div class="drop-box">
+                                    <a href=""><button class="btn-6">Buy Now</button></a><br>
+                                    <!-- <a href=""><button class="btn-6-1">Buy Now</button></a> -->
+                                    <a href=""><i class="fa-regular fa-heart" id="wishlist-add"></i></a>
+                                    <a href=""><i class="fa-solid fa-heart" style="color: #0fc72e;"  id="wishlist-add"></i></a>                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+    <!-- ----------------------section-10------------------------------------------ -->
+
+    <section class="container-fluid" id="cnt-fld-10">
+        <div class="box-16">
+            <h2>Subscribe our news</h2><br>
+            <div class="box-17">
+                <span> <input type="email" placeholder="Enter You Email" id="search-btn"><button
+                        id="btn-8">Search</button></span>
+
+            </div>
+        </div>
+        <div class="container" id="cnt-10">
+            <div class="row" id="rw-26">
+                <div class="col-sm" id="cl-34">
+                    <h3>Quick Link</h3>
+                    <ul>
+                         <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="service.html">Supplyier</a></li>
+                        <li><a href="productpage2.html">Product</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm" id="cl-34">
+                    <img src="footer-logo.png" alt=""><br>
+                    <p>Nunc condimentum purus conse quat antvehicula, a porttitor nibh facilisis. Etiam id sagittielt
+                        sceleri sque
+                        urnaauris vitae.</p>
+                    <div class="box-18">
+                         <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f fa-lg" id="facbook-icon"></i></a>
+                        <a href="https://twitter.com/i/flow/login"><i class="fa-brands fa-twitter fa-lg"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram fa-lg"></i></a>
+                        <a href="https://www.youtube.com/"><i class="fa-brands fa-square-youtube fa-lg"></i></a>
+                        <a href="https://in.pinterest.com/"><i class="fa-brands fa-pinterest fa-lg"></i></a>
+                        <a href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin-in fa-lg"></i></a>
+                    </div>
+
+                </div>
+                <div class="col-sm" id="cl-34">
+                    <h3 style="margin-top: -50px;">Contact Info</h3><br>
+                    <p id="p-1" style="inline-size: 200px;">Street 238,52 tempor
+                        Donec ultricies mattis nulla
+                        risus tristique ut.</p>
+                    <h4>+1 500 000 0000
+                        <br>
+                        demo@lorem.com
+                    </h4>
+                </div>
+            </div>
+            <p class="p">© Copyright 2023 SKT Naturopathy. - Design by Chax Roy</p>
+        </div>
+
+    </section>
+    <script>
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin:0,
+                nav: true,
+                dots: false,
+                // navElement:String,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                autoplayHoverPause: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 3
+                    }
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>

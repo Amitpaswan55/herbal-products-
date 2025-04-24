@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Herbal product</title>
+        <!-- ======================================= -->
+        <!-- <link rel="icon" type="png" href="img/favicon-32x32.png"> -->
+    
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <!--------------------------------------- cdjn link for icon------------------------------------------- -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!--  -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+            integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+            crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="box-1">
+            <img src="logo-1.png" alt="" id="img-1">
+        </div>
+        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="about.html">About <span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="productpage2.html">Product <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle box-2" href="#" role="button" data-toggle="dropdown"
+                        aria-expanded="false">
+                        Contact
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="" class="dropdown-item"><i class="fa-solid fa-phone fa-lg"></i> Call us now - <br>+65
+                            686565265</a>
+                        <a class="dropdown-item"
+                            href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&ifkv=AaSxoQzCc0yFNTIqmVMRojILbQQWpTRPeJwUUM2rIIXLE_4WfnQEhl3Xs0_HtJY4gvmWAF7bQs7FPg&osid=1&passive=1209600&service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S1275994016%3A1715718112928199&ddm=0">Gmail+</a>
+                        <a class="dropdown-item" href="https://twitter.com/i/flow/login">Twitter</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link " href="service.html">supplyier<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="search-li">
+                    <div class="boxsearch-product">
+                        <input type="search" class="search-engin" placeholder="search">
+                        <a href=""><i class="fa-solid fa-magnifying-glass" id="search-icon-1"></i></a>
+
+                    </div>
+                </li>
+            </ul>
+            <div class="box-user">
+                <i class="fa-solid fa-user fa-bounce fa-lg" style="color: #43b15f;"></i><a href="sign-out.html">Login
+                    <span class="span-1">/</span>
+                    <a href="sign-in.html">sign-up</a></a>
+            </div>
+            <div class="box-wishlist-1">
+                <a href=""><i class="fa-regular fa-heart" id="wslt"></i></a>
+                <a href="cart-list.html"><i class="fa-solid fa-cart-shopping" style="color: #1A4D2E;" id="wslt"></i>
+                </a><span>0</span>
+            </div>
+
+        </div>
+
+    </nav>
+    <section class="about-sec-1" id="kk">
+        <div class="abt-box-1">
+            <h1>About</h1>
+        </div>
+    </section>
+
+     <!-- ----------------------section-1------------------------------------------ -->
+
+     <section class="container-fluid" id="cnt-fld-1">
+        <div class="container" id="cnt-1">
+            <div class="row" id="rw-1">
+                <div class="col-sm" id="cl-2">
+
+                    <div class="row" id="rw-2">
+
+                        <div class="col-sm" id="cl-3">
+                            <img src="first-section-icon1.png" alt="" id="img-4">
+                        </div>
+                        <div class="col-sm" id="cl-4">
+                            <img src="first-section-icon2.png" alt="" id="img-4">
+                        </div>
+                    </div>
+                    <div class="row" id="rw-3">
+
+                        <div class="col-sm" id="cl-5">
+                            <img src="first-section-icon3.png" alt="" id="img-4">
+                        </div>
+                        <div class="col-sm" id="cl-6">
+                            <img src="first-section-icon4.png" alt="" id="img-4">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm" id="cl-7">
+                    <div class="row" id="rw-4">
+                        <div class="box-4">
+                            <h4>HOW IT WORKS</h4>
+                            <h2>Why Choose Pure Naturopathy</h2>
+                            <p>Duis variurid convallis elementu exerat tincidu magna, sepharet estine purus aceleo
+                                anfdye element
+                                varudos Vestibulum placerat dui ut nisl molestie, acelementum diam tempor lobortis
+                                lacinia.</p>
+                            <a href=""><button class="btn-3">view all Services</button></a>
+                        </div>
+                        <img src="first-section-img-right1.png" alt="" id="img-5">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ----------------------section-2------------------------------------------ -->
+
+    <section class="container-fluid" id="cnt-fld-2">
+        <div class="container" id="cnt-2">
+            <div class="row" id="rw-5">
+                <div class="col-sm" id="cl-8">
+                    <div class="row-6" id="rw-6">
+                        <div class="box-5">
+                            <h2>The Combination of Nature & Science</h2>
+                            <p>Duis variurid convallis elementu exerat tincidun magna, sepharetra estine purus aceleo
+                                anfdye element
+                                varudios.</p>
+                        </div>
+                    </div>
+                    <div class="row-7" id="rw-7">
+                        <div class="box-6">
+                            <ul>
+                                <li>100 % Organic</li>
+                                <li>Best Quality</li>
+                                <li>Hygienic Product</li>
+                                <li>Quality tested</li>
+                                <li>Health Care</li>
+                                <li>Organic Herbal</li>
+                            </ul>
+                            <a href=""><button class="btn-4">view all Services</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm" id="cl-9">
+                    <img src="img-4.jpg" alt="" id="img-6">
+                    <!-- <img src="first-section-img-right1--2.png" alt="" id="img-7">  -->
+                </div>
+            </div>
+    </section>
+
+     <!-- ----------------------section-4------------------------------------------ -->
+
+     <section class="container-fluid" id="cnt-fld-4">
+        <div class="container-sm" id="cnt-4">
+            <div class="row" id="rw-10">
+                <div class="col-sm" id="cl-12">
+                    <img src="section-4-right-img-final.jpg" alt="" id="img-10">
+                </div>
+                <div class="col-sm" id="cl-13">
+                    <div class="row" id="rw-11">
+                        <div class="box-8">
+                            <h4>HOW IT WORKS</h4>
+                            <h2>Easy Step to Order the Services.</h2>
+                            <p>Proin feugiat diam vitae ligula imperd dapibus vestibul tellus libero, at fermentum mi
+                                euismod ut.
+                                Vivamvitaey dui vitae turpis sollicitudin rutrum.</p>
+                        </div>
+                    </div>
+                    <div class="row" id="rw-12">
+                        <div class=row-13>
+                            <ul>
+                                <li>Consultations with our expert</li>
+                                <hr>
+                                <li>Get an appointments</li>
+                                <hr>
+                                <li>Enjoy your service</li>
+                            </ul>
+                        </div>
+                        <a href=""><button class="btn-5">Need Help ? Continus us </button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+ <!-- ----------------------section-10------------------------------------------ -->
+
+ <section class="container-fluid" id="cnt-fld-10">
+    <div class="box-16">
+        <h2>Subscribe our news</h2><br>
+        <div class="box-17">
+            <span> <input type="email" placeholder="Enter You Email" id="search-btn"><button
+                    id="btn-8">Search</button></span>
+
+        </div>
+    </div>
+    <div class="container" id="cnt-10">
+        <div class="row" id="rw-26">
+            <div class="col-sm" id="cl-34">
+                <h3>Quick Link</h3>
+                <ul>
+                     <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">Abot</a></li>
+                        <li><a href="service.html">Supplyier</a></li>
+                        <li><a href="productpage2.html">Product</a></li>
+                        <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-sm" id="cl-34">
+                <img src="footer-logo.png" alt=""><br>
+                <p>Nunc condimentum purus conse quat antvehicula, a porttitor nibh facilisis. Etiam id sagittielt
+                    sceleri sque
+                    urnaauris vitae.</p>
+                <div class="box-18">
+                     <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f fa-lg" id="facbook-icon"></i></a>
+                        <a href="https://twitter.com/i/flow/login"><i class="fa-brands fa-twitter fa-lg"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram fa-lg"></i></a>
+                        <a href="https://www.youtube.com/"><i class="fa-brands fa-square-youtube fa-lg"></i></a>
+                        <a href="https://in.pinterest.com/"><i class="fa-brands fa-pinterest fa-lg"></i></a>
+                        <a href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin-in fa-lg"></i></a>
+                </div>
+
+            </div>
+            <div class="col-sm" id="cl-34">
+                <h3 style="margin-top: -50px;">Contact Info</h3><br>
+                <p id="p-1" style="inline-size: 200px;">Street 238,52 tempor
+                    Donec ultricies mattis nulla
+                    risus tristique ut.</p>
+                <h4>+1 500 000 0000
+                    <br>
+                    demo@lorem.com
+                </h4>
+            </div>
+        </div>
+        <p class="p">© Copyright 2023 SKT Naturopathy. - Design by Chax Roy</p>
+    </div>
+
+</section>
+
+</body>
+</html>

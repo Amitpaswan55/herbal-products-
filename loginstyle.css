@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Kalnia:wght@100..700&family=Kaushan+Script&family=Playball&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Unna:ital,wght@0,400;0,700;1,400;1,700&family=Zeyada&display=swap');
+body{
+   
+    margin: 0px;
+    padding: 0px;
+    
+}
+h2{
+    font-family: "Kaushan Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+h4{
+    font-family: "Playball", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+p{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+/* .box-1{
+    height: 500px;
+    width: 500px;
+    color: rgb(170, 56, 56);
+    
+} */
+#box-2{
+    background-color: #eceaea;
+    display: flex;
+    height: 800px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url(../img/bg-img.jpg);
+    background-size: 100% 100%; */
+}
+.container{
+    height: 450px;
+    width: 80%;
+    padding: 0px;
+    box-shadow: 1px 2px 30px 2px rgb(47, 45, 45);
+    background-color: rgb(255, 255, 255);
+       /* background-color: red; */
+       height: 500px;
+       width: 70%;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+}
+.container-1{
+    height: 450px;
+    width: 80%;
+    box-shadow: 1px 2px 30px 2px rgb(47, 45, 45);
+    background-color: rgb(255, 255, 255);
+       /* background-color: red; */
+       height: 500px;
+       width: 70%;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       flex-direction: row-reverse;
+}
+.box-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 20px;
+    height:fit-content ;
+    width: 70%;
+    /* box-shadow: 50p 50px 5px 50px solid black; */
+
+}
+.box-2{
+    background: #dd375e;
+    background: linear-gradient(to right, #FF4B2B, #FF416C);
+    height: 500px;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+} 
+.box-hd p{
+    margin-top: 20px;
+   text-align: center; 
+}
+.lg-box-1{
+    margin-left: 30% !important;
+}
+.logo-box{
+    margin-left: 10px;
+    /* display: inline-block; */
+    border-radius: 50%;
+    padding: 9px 15px 7px 10px;
+    height: auto;
+    text-align: center;
+    width: 50px;
+    display: inline-block;
+    border: 1px solid gray;
+}
+#icon-logo{
+
+    font-size: 30px;
+}
+#frm-box{
+    width: 90%;
+    /* background-color: red; */
+    /* display: flex; */
+}
+.frm-box-1{
+   
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.box-3{
+    /* background-color: rgb(36, 97, 82); */
+    height: 250px;
+    width: 70%;
+    color: white;
+    text-align: center;
+} 
+.checkbox-rmbr{
+    margin-left: 7%;
+}
+.btn{
+    height: 40px;
+    width:150px;
+    color:rgb(46, 46, 246) ;
+    background-color: transparent;
+    font-size: 18px;
+    border:2px solid rgb(46, 46, 246);
+    border-radius: 20px;
+    border-style:groove;
+    cursor: pointer;
+    margin-left: 30%;
+
+}
+.btn:hover{
+    transition: 1s;
+    background-color: rgb(86, 163, 61);
+   
+
+}
+.box-3 .btn{
+    margin-left: -0%;
+    margin-top: 50px;
+    color: white;
+    border:2px solid rgb(255, 255, 255);
+} 
+
+/* =======sing-in===form======================== */
+#form-sign-in{
+    height: fit-content;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    /* background-color: cyan; */
+    display: flex;
+    flex-direction: column;
+}
+/* .container-1.box-1{
+    width: 90%;
+} */
+#box-2-sing-in{
+    background: #dd375e;
+    background: linear-gradient(to right, #FF4B2B, #FF416C);
+    height: 500px;
+    width: 42%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sing-in-frm{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: row;
+    /* margin-left: 20px; */
+    /* background-color: red; */
+}
+.box-address{
+    margin-left: -180px;
+}
+.box-over-flow{
+    height: 470px;
+    width: 100%;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    /* background-color: red; */
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+}
+.box-over-flow.btn{
+    margin-top: 50px;
+}

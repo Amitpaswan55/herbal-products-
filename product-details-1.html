@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herbal product</title>
+    <!-- ======================================= -->
+    <!-- <link rel="icon" type="png" href="img/favicon-32x32.png"> -->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <!--------------------------------------- cdjn link for icon------------------------------------------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- ================css-link-============================== -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="owl.carousel.css">
+    <link rel="stylesheet" href="owl.theme.green.css">
+    <!------------------------------ js link--------------------------------------- -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="bluer-bg.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="box-1">
+            <img src="logo-1.png" alt="" id="img-1">
+        </div>
+        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="about.html">About <span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="productpage2.html">Product <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle box-2" href="#" role="button" data-toggle="dropdown"
+                        aria-expanded="false">
+                        Contact
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="" class="dropdown-item"><i class="fa-solid fa-phone fa-lg"></i> Call us now - <br>+65
+                            686565265</a>
+                        <a class="dropdown-item"
+                            href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&ifkv=AaSxoQzCc0yFNTIqmVMRojILbQQWpTRPeJwUUM2rIIXLE_4WfnQEhl3Xs0_HtJY4gvmWAF7bQs7FPg&osid=1&passive=1209600&service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S1275994016%3A1715718112928199&ddm=0">Gmail+</a>
+                        <a class="dropdown-item" href="https://twitter.com/i/flow/login">Twitter</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link " href="service.html">supplyier<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="search-li">
+                    <div class="boxsearch-product">
+                        <input type="search" class="search-engin" placeholder="search">
+                        <a href=""><i class="fa-solid fa-magnifying-glass" id="search-icon-1"></i></a>
+
+                    </div>
+                </li>
+            </ul>
+            <div class="box-user">
+                <i class="fa-solid fa-user fa-bounce fa-lg" style="color: #43b15f;"></i><a href="sign-out.html">Login
+                    <span class="span-1">/</span>
+                    <a href="sign-in.html">sign-up</a></a>
+            </div>
+            <div class="box-wishlist-1">
+                <a href=""><i class="fa-regular fa-heart" id="wslt"></i></a>
+                <a href="cart-list.html"><i class="fa-solid fa-cart-shopping" style="color: #1A4D2E;" id="wslt"></i>
+                </a><span>0</span>
+            </div>
+
+        </div>
+
+    </nav>
+    <section class="about-sec-1" id="kk">
+        <div class="abt-box-1">
+            <h1>About Product</h1>
+        </div>
+    </section>
+
+    <!-- ----------------------section-1------------------------------------------ -->
+
+    <section class="container-fluid" id="cnt-fld-12">
+        <div class="container" id="cnt-12">
+            <div class="row" id="product-dt-1">
+                <div class="col-sm-6" id="pdt-cl-1">
+                    <div class="product-img-box-1">
+                        <p>Ayurvedic Immunity Booster for Kids</p>
+                        <img src="product-img-3.jpg" alt="" id="pdt-dts-img-1">
+                    </div>
+                </div>
+                <div class="col-sm-6" id="pdt-cl-2">
+                    <p>Rs.17.02</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, porro. Cumque, expedita harum
+                        quam distinctio saepe atque incidunt earum iusto pariatur? Vitae ipsam porro nulla voluptatem
+                        voluptates aspernatur itaque fuga veritatis! Necessitatibus sequi non dolorum consectetur
+                        consequatur, molestias est repellendus illum, iusto vitae doloribus! Similique amet fugiat vel
+                        obcaecati sequi delectus reprehenderit, ad distinctio sapiente optio quidem id! Repellendus,
+                        totam! Qui debitis saepe soluta iusto facilis quas modi eligendi nemo, et, tempore, adipisci
+                        deleniti aperiam sequi commodi labore? Quasi eaque voluptas accusantium. Debitis ipsa, error
+                        perferendis earum asperiores nesciunt. Optio sint magnam autem fugit illum veritatis asperiores
+                        numquam sequi ducimus?</p>
+                    <button class="ptd-btn-1">Add to Cart</button>
+                </div>
+            </div>
+            <div class="row" id="product-dt-2">
+                <div class="col-sm" id="pdt-cl-1">
+                    <div class="box-discription-text">
+
+                        <div class="box-dis-rvw-cntr">
+                            <a href="" onclick="dicription()" id="dicription-btn-box">
+                                <div class="discription-box">Discription</div>
+                            </a>
+                            <a href="" onclick="Review()" id="Review-btn-box">
+                                <div class="Review-box">Review</div>
+                            </a>
+                           
+                        </div>
+                        <div id="boxdscptext">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quo assumenda placeat tempora
+                                quos
+                                nemo accusantium fugit, exercitationem voluptas reprehenderit in maxime tenetur ex ullam.
+                                Cum
+                                ducimus ex, eaque fugiat impedit ipsum magnam id architecto praesentium perspiciatis fuga
+                                itaque. Quia veniam, mollitia earum fuga voluptates aut dolore accusamus quo consectetur!
+                                <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta perferendis consequuntur
+                                vitae sint quam ea quos quaerat pariatur veritatis velit similique hic sequi, natus
+                                repudiandae
+                                exercitationem recusandae non numquam provident voluptatem nesciunt. Magnam delectus eos
+                                neque
+                                quis adipisci voluptate nam eaque asperiores unde quibusdam perferendis dicta sit qui, omnis
+                                aspernatur.
+                            </p>
+                        </div>
+                        <div class="rreevvw" id="reviewformbox">
+                            <p>There are no reviews yet. <br>
+
+                                Be the first to review “Controlling Blood Pressure”</p><br>
+                                <p>Your rating *</p>
+                                <div class="star-box">
+                                    <div class="box-satar-1"><i class="fa-regular fa-star fa-sm" style="color: #0c59ac;"></i>
+                                        <i class="fa-regular fa-star fa-sm" style="color: #0c59ac;"></i>
+                                        <i class="fa-regular fa-star fa-sm" style="color: #0c59ac;"></i>
+                                        <i class="fa-regular fa-star fa-sm" style="color: #0c59ac;"></i>
+                                        
+                                    </div>  
+                                </div>
+                            <form action="" class="form-rvw">
+                                <label for="review">your review *</label><br>
+                                <textarea name="" id="" cols="100" rows="5"></textarea>
+                                <br><br>
+                                <label for="Name">Name</label><br>
+                                <input type="text" class="rvw-box"><br><br>
+                                <label for="Email">Email</label><br>
+                                <input type="email" class="rvw-box"><br><br>
+                                <input type="checkbox" name="" id="">
+                                <label for="">Save my name, email, and website in this browser for the next time I comment.</label>
+                                <br><br>
+                                <button  class="ptd-btn-2">sumit</button>
+
+
+                            </form>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ====================section-owl================================= -->
+    <section class="container-fluid" id="cnt-fld-13">
+        <div class="container" id="cnt-13">
+            <div class="box-text-hd-smlr">
+                <h5>Related Products</h5>
+            </div>
+            <div class="owl-carousel owl-theme box-owl">
+                <div class="item">
+                    <div class="box-similar-pdt-1">
+                        <div class="similar-pdt-img">
+                            <img src="product-img-2.jpg" alt="" id="box-img-similar">
+                        </div>
+                        <div class="similar-pdt-text">
+                            <a href="">
+                                <p>
+                                    Herbal Green Tea With Lemon Extract <br>
+                                    Rs.10.00</p>
+                            </a>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="box-similar-pdt-1">
+                        <div class="similar-pdt-img">
+                            <img src="product-img-5.jpg" alt="" id="box-img-similar">
+                        </div>
+                        <div class="similar-pdt-text">
+                            <a href="">
+                                <p>
+                                    Herbal Green Tea With Lemon Extract <br>
+                                    Rs.10.00</p>
+                            </a>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="box-similar-pdt-1">
+                        <div class="similar-pdt-img">
+                            <img src="product-img-1.jpg" alt="" id="box-img-similar">
+                        </div>
+                        <div class="similar-pdt-text">
+                            <a href="">
+                                <p>
+                                    Herbal Green Tea With Lemon Extract <br>
+                                    Rs.10.00</p>
+                            </a>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="box-similar-pdt-1">
+                        <div class="similar-pdt-img">
+                            <img src="product-img-3.jpg" alt="" id="box-img-similar">
+                        </div>
+                        <div class="similar-pdt-text">
+                            <a href="">
+                                <p>
+                                    Herbal Green Tea With Lemon Extract <br>
+                                    Rs.10.00</p>
+                            </a>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="box-similar-pdt-1">
+                        <div class="similar-pdt-img">
+                            <img src="product-img-4.jpg" alt="" id="box-img-similar">
+                        </div>
+                        <div class="similar-pdt-text">
+                            <a href="">
+                                <p>
+                                    Herbal Green Tea With Lemon Extract <br>
+                                    Rs.10.00</p>
+                            </a>
+
+                        </div>
+
+                    </div>
+                </div>
+                <!-- <div class="item">
+                  <img src="product-img-2.jpg" alt="">
+                </div>
+                <div class="item">
+                  <img src="img/bottom-logo-5.jpg" alt="">
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <!-- ----------------------section-10------------------------------------------ -->
+
+    <section class="container-fluid" id="cnt-fld-10">
+        <div class="box-16">
+            <h2>Subscribe our news</h2><br>
+            <div class="box-17">
+                <span> <input type="email" placeholder="Enter You Email" id="search-btn"><button
+                        id="btn-8">Search</button></span>
+
+            </div>
+        </div>
+        <div class="container" id="cnt-10">
+            <div class="row" id="rw-26">
+                <div class="col-sm" id="cl-34">
+                    <h3>Quick Link</h3>
+                    <ul>
+                         <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="service.html">Supplyier</a></li>
+                        <li><a href="productpage2.html">Product</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm" id="cl-34">
+                    <img src="footer-logo.png" alt=""><br>
+                    <p>Nunc condimentum purus conse quat antvehicula, a porttitor nibh facilisis. Etiam id sagittielt
+                        sceleri sque
+                        urnaauris vitae.</p>
+                    <div class="box-18">
+                        <a href=""><i class="fa-brands fa-facebook-f fa-lg" id="facbook-icon"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter fa-lg"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram fa-lg"></i></a>
+                        <a href=""><i class="fa-brands fa-square-youtube fa-lg"></i></a>
+                        <a href=""><i class="fa-brands fa-pinterest fa-lg"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin-in fa-lg"></i></a>
+                    </div>
+
+                </div>
+                <div class="col-sm" id="cl-34">
+                    <h3 style="margin-top: -50px;">Contact Info</h3><br>
+                    <p id="p-1" style="inline-size: 200px;">Street 238,52 tempor
+                        Donec ultricies mattis nulla
+                        risus tristique ut.</p>
+                    <h4>+1 500 000 0000
+                        <br>
+                        demo@lorem.com
+                    </h4>
+                </div>
+            </div>
+            <p class="p">© Copyright 2023 SKT Naturopathy. - Design by Chax Roy</p>
+        </div>
+
+    </section>
+    <script>
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                dots: true,
+                // navElement:String,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                autoplayHoverPause: false,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 5
+                    }
+                }
+            })
+        })
+    </script>
+
+</body>
+
+</html>

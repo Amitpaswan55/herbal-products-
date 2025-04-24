@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herbal product</title>
+    <!-- ======================================= -->
+    <!-- <link rel="icon" type="png" href="img/favicon-32x32.png"> -->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <!--------------------------------------- cdjn link for icon------------------------------------------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="supplyersheet.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="box-1">
+            <img src="logo-1.png" alt="" id="img-1">
+        </div>
+        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="about.html">About <span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="productpage2.html">Product <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle box-2" href="#" role="button" data-toggle="dropdown"
+                        aria-expanded="false">
+                        Contact
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="" class="dropdown-item"><i class="fa-solid fa-phone fa-lg"></i> Call us now - <br>+65
+                            686565265</a>
+                        <a class="dropdown-item"
+                            href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&ifkv=AaSxoQzCc0yFNTIqmVMRojILbQQWpTRPeJwUUM2rIIXLE_4WfnQEhl3Xs0_HtJY4gvmWAF7bQs7FPg&osid=1&passive=1209600&service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S1275994016%3A1715718112928199&ddm=0">Gmail+</a>
+                        <a class="dropdown-item" href="https://twitter.com/i/flow/login">Twitter</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link " href="service.html">supplyier<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="search-li">
+                    <div class="boxsearch-product">
+                        <input type="search" class="search-engin" placeholder="search">
+                        <a href=""><i class="fa-solid fa-magnifying-glass" id="search-icon-1"></i></a>
+
+                    </div>
+                </li>
+            </ul>
+            <div class="box-user">
+                <i class="fa-solid fa-user fa-bounce fa-lg" style="color: #43b15f;"></i><a href="sign-out.html">Login
+                    <span class="span-1">/</span>
+                    <a href="sign-in.html">sign-up</a></a>
+            </div>
+            <div class="box-wishlist-1">
+                <a href=""><i class="fa-regular fa-heart" id="wslt"></i></a>
+                <a href="cart-list.html"><i class="fa-solid fa-cart-shopping" style="color: #1A4D2E;" id="wslt"></i>
+                </a><span>0</span>
+            </div>
+
+        </div>
+
+    </nav>
+    <section class="about-sec-1" id="kk">
+        <div class="abt-box-1">
+            <h1>Supplyier
+            </h1>
+        </div>
+    </section>
+
+    <!-- ----------------------section-3------------------------------------------ -->
+
+    <section class="container-fluid text-center" id="cnt-fld-3" style="height: 800px;">
+        <div class="box-7">
+            <p style="color: rgb(31, 148, 31);;"></p>
+            <h2 class="h2">
+                Easy Step to supplyier the Services.
+            </h2>
+        </div>
+        <div class="container-1-supplyer">
+            <div class="col-md-7 box-1-supplyer">
+                <div class="box-over-flow">
+                    <form action="" method="post" id="form-supplier">
+                        <!-- <div class="col-md-12 box-hd">
+                    <h2 style="text-align: center;">Create Account</h2>
+                    <div class="logo-box lg-box-1"><a href=""><i class="fa-solid fa-g" id="icon-logo"></i></a></div>
+                    <div class="logo-box"><a href=""><i class="fa-brands fa-facebook-f" id="icon-logo"></i></a></div>
+                    <div class="logo-box"><a href=""><i class="fa-brands fa-linkedin-in" id="icon-logo"></i></a></div>
+                    <P>or use your account</P>
+                  </div> -->
+                        <div class="form-row sing-in-frm">
+                            <div class="col-md-6">
+                                <label class="lbl-1" for="First Name">Owner Name</label>
+                                <input type="text" class="form-control" placeholder="First name">
+                            </div><br><br>
+                            <div class="col-md-6">
+                                <label class="lbl-1" for="Last Name">company Name</label>
+                                <input type="text" class="form-control" placeholder="Last name">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label class="lbl-1" for="Brand">Brand name</label>
+                                <input type="text" class="form-control" placeholder="Brand Name" id="inputPassword4">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label class="lbl-1" for="inputEmail4">Email</label>
+                                <input type="email" class="form-control" id="inputEmail4">
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label for="phone number">Phone Number</label><br>
+                                <input type="tel" placeholder="phone no." class="form-control">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputCity">City</label>
+                                <input type="text" class="form-control" id="inputCity">
+                            </div>
+                            <div class="form-group box-address col-md-6">
+                                <label for="inputAddress">Address</label>
+                                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                            </div>
+                            <div class="form-group box-address col-md-6">
+                                <label for="pancard">Pan Card Number</label>
+                                <input type="text" class="form-control" id="inputAddress" placeholder="KH256G15SD">
+                            </div>
+                            <div class="form-group box-address col-md-6" style="margin-top: 15px;">
+                                <input type="file" class="custom-file-input" id="customFile">
+                                <label class="custom-file-label" for="customFile">Upload Product Img</label>
+                            </div>
+                            <div class="form-group box-address col-md-4" style="margin-left: 10px; margin-top: 15px;">
+                                <input type="file" class="custom-file-input" id="customFile">
+                                <label class="custom-file-label" for="customFile">Signature</label>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <div class="form-group col-md-8">
+                                    <label for="inputZip">Pin Code</label>
+                                    <input type="text" class="form-control" id="inputZip">
+                                </div>
+                            </div>
+
+                        </div>
+                    </form>
+                    <button onclick="document.location='sign-out.html'" type="submit"
+                        class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ----------------------section-10------------------------------------------ -->
+
+    <section class="container-fluid" id="cnt-fld-10">
+        <div class="box-16">
+            <h2>Subscribe our news</h2><br>
+            <div class="box-17">
+                <span> <input type="email" placeholder="Enter You Email" id="search-btn"><button
+                        id="btn-8">Search</button></span>
+
+            </div>
+        </div>
+        <div class="container" id="cnt-10">
+            <div class="row" id="rw-26">
+                <div class="col-sm" id="cl-34">
+                    <h3>Quick Link</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="service.html">Supplyier</a></li>
+                        <li><a href="productpage2.html">Product</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm" id="cl-34">
+                    <img src="footer-logo.png" alt=""><br>
+                    <p>Nunc condimentum purus conse quat antvehicula, a porttitor nibh facilisis. Etiam id sagittielt
+                        sceleri sque
+                        urnaauris vitae.</p>
+                    <div class="box-18">
+                         <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f fa-lg" id="facbook-icon"></i></a>
+                        <a href="https://twitter.com/i/flow/login"><i class="fa-brands fa-twitter fa-lg"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram fa-lg"></i></a>
+                        <a href="https://www.youtube.com/"><i class="fa-brands fa-square-youtube fa-lg"></i></a>
+                        <a href="https://in.pinterest.com/"><i class="fa-brands fa-pinterest fa-lg"></i></a>
+                        <a href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin-in fa-lg"></i></a>
+                    </div>
+
+                </div>
+                <div class="col-sm" id="cl-34">
+                    <h3 style="margin-top: -50px;">Contact Info</h3><br>
+                    <p id="p-1" style="inline-size: 200px;">Street 238,52 tempor
+                        Donec ultricies mattis nulla
+                        risus tristique ut.</p>
+                    <h4>+1 500 000 0000
+                        <br>
+                        demo@lorem.com
+                    </h4>
+                </div>
+            </div>
+            <p class="p">© Copyright 2023 SKT Naturopathy. - Design by Chax Roy</p>
+        </div>
+
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herbal product</title>
+    <!-- ======================================= -->
+    <!-- <link rel="icon" type="png" href="img/favicon-32x32.png"> -->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <!--------------------------------------- cdjn link for icon------------------------------------------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="box-1">
+            <img src="logo-1.png" alt="" id="img-1">
+        </div>
+        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="about.html">About <span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="productpage2.html">Product <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle box-2" href="#" role="button" data-toggle="dropdown"
+                        aria-expanded="false">
+                        Contact
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="" class="dropdown-item"><i class="fa-solid fa-phone fa-lg"></i> Call us now - <br>+65
+                            686565265</a>
+                        <a class="dropdown-item"
+                            href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&ifkv=AaSxoQzCc0yFNTIqmVMRojILbQQWpTRPeJwUUM2rIIXLE_4WfnQEhl3Xs0_HtJY4gvmWAF7bQs7FPg&osid=1&passive=1209600&service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S1275994016%3A1715718112928199&ddm=0">Gmail+</a>
+                        <a class="dropdown-item" href="https://twitter.com/i/flow/login">Twitter</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link " href="service.html">supplyier<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="search-li">
+                    <div class="boxsearch-product">
+                        <input type="search" class="search-engin" placeholder="search">
+                        <a href=""><i class="fa-solid fa-magnifying-glass" id="search-icon-1"></i></a>
+
+                    </div>
+                </li>
+            </ul>
+            <div class="box-user">
+                <i class="fa-solid fa-user fa-bounce fa-lg" style="color: #43b15f;"></i><a href="sign-out.html">Login
+                    <span class="span-1">/</span>
+                    <a href="sign-in.html">sign-up</a></a>
+            </div>
+            <div class="box-wishlist-1">
+                <a href=""><i class="fa-regular fa-heart" id="wslt"></i></a>
+                <a href="cart-list.html"><i class="fa-solid fa-cart-shopping" style="color: #1A4D2E;" id="wslt"></i>
+                </a><span>0</span>
+            </div>
+
+        </div>
+
+    </nav>
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <div class="box-3">
+            <h5>WE’RE THE BEST IN</h5><br>
+            <h2>NATUROPATHY <br>& Ayurvedic Medicine</h2>
+            <p>Duis variur convls eleme exera tincid magna sed phares purus aceleo.</p>
+            <a href=""><button class="btn-2">Discover Me</button></a>
+        </div>
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img-1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img-2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img-3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </button>
+    </div>
+
+    <!-- ----------------------section-1------------------------------------------ -->
+
+    <section class="container-fluid" id="cnt-fld-1">
+        <div class="container" id="cnt-1">
+            <div class="row" id="rw-1">
+                <div class="col-sm" id="cl-2">
+
+                    <div class="row" id="rw-2">
+
+                        <div class="col-sm" id="cl-3">
+                            <img src="first-section-icon1.png" alt="" id="img-4">
+                        </div>
+                        <div class="col-sm" id="cl-4">
+                            <img src="first-section-icon2.png" alt="" id="img-4">
+                        </div>
+                    </div>
+                    <div class="row" id="rw-3">
+
+                        <div class="col-sm" id="cl-5">
+                            <img src="first-section-icon3.png" alt="" id="img-4">
+                        </div>
+                        <div class="col-sm" id="cl-6">
+                            <img src="first-section-icon4.png" alt="" id="img-4">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm" id="cl-7">
+                    <div class="row" id="rw-4">
+                        <div class="box-4">
+                            <h4>HOW IT WORKS</h4>
+                            <h2>Why Choose Pure Naturopathy</h2>
+                            <p>Duis variurid convallis elementu exerat tincidu magna, sepharet estine purus aceleo
+                                anfdye element
+                                varudos Vestibulum placerat dui ut nisl molestie, acelementum diam tempor lobortis
+                                lacinia.</p>
+                            <a href=""><button class="btn-3">view all Services</button></a>
+                        </div>
+                        <img src="first-section-img-right1.png" alt="" id="img-5">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ----------------------section-2------------------------------------------ -->
+
+    <section class="container-fluid" id="cnt-fld-2">
+        <div class="container" id="cnt-2">
+            <div class="row" id="rw-5">
+                <div class="col-sm" id="cl-8">
+                    <div class="row-6" id="rw-6">
+                        <div class="box-5">
+                            <h2>The Combination of Nature & Science</h2>
+                            <p>Duis variurid convallis elementu exerat tincidun magna, sepharetra estine purus aceleo
+                                anfdye element
+                                varudios.</p>
+                        </div>
+                    </div>
+                    <div class="row-7" id="rw-7">
+                        <div class="box-6">
+                            <ul>
+                                <li>100 % Organic</li>
+                                <li>Best Quality</li>
+                                <li>Hygienic Product</li>
+                                <li>Quality tested</li>
+                                <li>Health Care</li>
+                                <li>Organic Herbal</li>
+                            </ul>
+                            <a href=""><button class="btn-4">view all Services</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm" id="cl-9">
+                    <img src="img-4.jpg" alt="" id="img-6">
+                    <!-- <img src="first-section-img-right1--2.png" alt="" id="img-7">  -->
+                </div>
+            </div>
+    </section>
+
+    <!-- ----------------------section-3------------------------------------------ -->
+
+    <section class="container-fluid text-center" id="cnt-fld-3">
+        <div class="box-7">
+            <p style="color: rgb(31, 148, 31);;">WHAT WE OFFER</p>
+            <h2 class="h2">
+                Easy Step to Order the Services.
+            </h2>
+        </div>
+
+        <div class="container" id="cnt-3">
+            <div class="row" id="rw-8">
+                <div class="col" id="cl-10">
+                    <div class="img-box">
+                        <img src="service-icon-3.jpg" alt="" id="img-8">
+                    </div>
+                    <h5>Herbal</h5>
+                </div>
+                <div class="col" id="cl-10">
+                    <div class="img-box">
+                        <img src="service-icon-4.jpg" alt="" id="img-8">
+                    </div>
+                    <h5>Herb Products</h5>
+                </div>
+                <div class="col" id="cl-10">
+                    <div class="img-box">
+                        <img src="service-icon-5 (1).jpg" alt="" id="img-8">
+                    </div>
+                    <h5> Medicine</h5>
+                </div>
+                <div class="col" id="cl-10">
+                    <div class="img-box">
+                        <img src="service-icon-5 (1).jpg" alt="" id="img-8">
+                    </div>
+                    <h5>Treatments</h5>
+                </div>
+            </div>
+            <div class="row" id="rw-9">
+                <div class="col" id="cl-11">
+                    <div class="img-box">
+                        <img src="service-icon-6.jpg" alt="" id="img-9">
+                    </div>
+                    <h5>Treatments</h5>
+                </div>
+                <div class="col" id="cl-11">
+                    <div class="img-box">
+                        <img src="service-icon-7.jpg" alt="" id="img-9">
+                    </div>
+                    <h5>Treatments</h5>
+                </div>
+                <div class="col" id="cl-11">
+                    <div class="img-box">
+                        <img src="service-icon-8.jpg" alt="" id="img-9">
+                    </div>
+                    <h5>Treatments</h5>
+                </div>
+                <div class="col" id="cl-11">
+                    <div class="img-box">
+                        <img src="service-icon-8.jpg" alt="" id="img-9">
+                    </div>
+                    <h5>Treatments</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ----------------------section-4------------------------------------------ -->
+
+    <section class="container-fluid" id="cnt-fld-4">
+        <div class="container-sm" id="cnt-4">
+            <div class="row" id="rw-10">
+                <div class="col-sm" id="cl-12">
+                    <img src="section-4-right-img-final.jpg" alt="" id="img-10">
+                </div>
+                <div class="col-sm" id="cl-13">
+                    <div class="row" id="rw-11">
+                        <div class="box-8">
+                            <h4>HOW IT WORKS</h4>
+                            <h2>Easy Step to Order the Services.</h2>
+                            <p>Proin feugiat diam vitae ligula imperd dapibus vestibul tellus libero, at fermentum mi
+                                euismod ut.
+                                Vivamvitaey dui vitae turpis sollicitudin rutrum.</p>
+                        </div>
+                    </div>
+                    <div class="row" id="rw-12">
+                        <div class=row-13>
+                            <ul>
+                                <li>Consultations with our expert</li>
+                                <hr>
+                                <li>Get an appointments</li>
+                                <hr>
+                                <li>Enjoy your service</li>
+                            </ul>
+                        </div>
+                        <a href=""><button class="btn-5">Need Help ? Continus us </button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ----------------------section-5------------------------------------------ -->
+
+    <section class="container-fluid" id="cnt-fld-5">
+        <div class="box-9">
+            <p>Whatch Video</p>
+            <h2>Easy Step to Order the Services.</h2>
+            <a href="https://youtu.be/y_0IJMtKgrk?si=0c2pePPgQXbXqPF-"><img src="video-play-icon.png" alt=""></a>
+        </div>
+        <div class="container" id="cnt-5">
+            <div class="row" id="rw-14">
+                <div class="col-sm" id="cl-14">
+                    <div class="row" id="rw-15">
+                        <div class="col-sm-4" id="cl-15">
+                            <img src="section-5-icon3.jpg" alt="" id="img-11">
+                        </div>
+                        <div class="col-sm-8" id="cl-16">
+                            <div class="msg-box">
+                                <h5>
+                                    Ayurvedic Store
+                                </h5>
+                                <p>Duis variurid convall element exerat.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm" id="cl-17">
+                    <div class="row" id="rw-15">
+                        <div class="col-sm-4" id="cl-15">
+                            <img src="section-5-icon2.jpg" alt="" id="img-11">
+                        </div>
+                        <div class="col-sm-8" id="cl-16">
+                            <div class="msg-box">
+                                <h5>
+                                    Ayurvedic Store
+                                </h5>
+                                <p>Duis variurid convall element exerat.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm" id="cl-18">
+                    <div class="row" id="rw-15">
+                        <div class="col-sm-4" id="cl-15">
+                            <img src="section-5-icon1.jpg" alt="" id="img-11">
+                        </div>
+                        <div class="col-sm-8" id="cl-16">
+                            <div class="msg-box">
+                                <h5>
+                                    Ayurvedic Store
+                                </h5>
+                                <p>Duis variurid convall element exerat.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ----------------------section-6------------------------------------------ -->
+
+    <section class="container-fluid" id="cnt-fld-6">
+        <p>PRODUCT</p>
+        <H2><strong>We Are Here To Give You The <br>Best Ayurvedic Products</strong></H2>
+        <div class="container-sm" id="cnt-6">
+            <div class="row" id="rw-exp">
+                <div class="row" id="rw-16">
+                    <div class="col" id="cl-19">
+                        <div class="img-box-1">
+                            <img src="product-img-4.jpg" alt="" id="img-12">
+                            <a href="">
+                                <h5>Ayurvedic Capsules for Muscle Gain</h5>
+                            </a>
+                            <p style="text-decoration-line: line-through; color: red;">Rs.107.00</p>
+                            <p>Rs.50.00</p>
+                            <div class="drop-box">
+                                <a href=""><button class="btn-6">Buy Now</button></a><br>
+                                <!-- <a href=""><button class="btn-6-1">Buy Now</button></a> -->
+                                <a href=""><i class="fa-regular fa-heart" id="wishlist-add"></i></a>
+                                <a href=""><i class="fa-solid fa-heart" style="color: #0fc72e;"
+                                        id="wishlist-add"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" id="cl-19">
+                        <div class="img-box-1">
+                            <img src="product-img-5.jpg" alt="" id="img-12">
+                            <a href="">
+                                <h5>Ayurvedic Immunity Booster for Kids </h5>
+                            </a>
+                            <p style="text-decoration-line: line-through; color: red;">Rs.37.00</p>
+                            <p>Rs.35.00</p>
+                            <div class="drop-box">
+                                <a href=""><button class="btn-6">Buy Now</button></a><br>
+                                <!-- <a href=""><button class="btn-6-1">Buy Now</button></a> -->
+                                <a href=""><i class="fa-regular fa-heart" id="wishlist-add"></i></a>
+                                <a href=""><i class="fa-solid fa-heart" style="color: #0fc72e;"
+                                        id="wishlist-add"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" id="cl-19">
+                        <div class="img-box-1">
+                            <img src="product-img-6.jpg" alt="" id="img-12">
+                            <a href="">
+                                <h5>Ayurvedic Capsules for Muscle Gain</h5>
+                            </a>
+                            <p style="text-decoration-line: line-through; color: red;">Rs.47.00</p>
+                            <p>Rs.37.00</p>
+                            <div class="drop-box">
+                                <a href=""><button class="btn-6">Buy Now</button></a><br>
+                                <!-- <a href=""><button class="btn-6-1">Buy Now</button></a> -->
+                                <a href=""><i class="fa-regular fa-heart" id="wishlist-add"></i></a>
+                                <a href=""><i class="fa-solid fa-heart" style="color: #0fc72e;"
+                                        id="wishlist-add"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" id="cl-19">
+                        <div class="img-box-1">
+                            <img src="product-img-7.jpg" alt="" id="img-12">
+                            <a href="">
+                                <h5>Controlling Blood Pressure </h5>
+                            </a>
+                            <p style="text-decoration-line: line-through; color: red;">Rs.37.00</p>
+                            <p>Rs.26.00</p>
+                            <div class="drop-box">
+                                <a href=""><button class="btn-6">Buy Now</button></a><br>
+                                <!-- <a href=""><button class="btn-6-1">Buy Now</button></a> -->
+                                <a href=""><i class="fa-regular fa-heart" id="wishlist-add"></i></a>
+                                <a href=""><i class="fa-solid fa-heart" style="color: #0fc72e;"
+                                        id="wishlist-add"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="rw-17">
+                    <div class="col" id="cl-19">
+                        <div class="img-box-1">
+                            <img src="product-img-8.jpg" alt="" id="img-12">
+                            <a href="">
+                                <h5>Power of Triphala and Wheatgrass</h5>
+                            </a>
+                            <p style="text-decoration-line: line-through; color: red;">Rs.47.00</p>
+                            <p>Rs.29.00</p>
+                            <div class="drop-box">
+                                <a href=""><button class="btn-6">Buy Now</button></a><br>
+                                <!-- <a href=""><button class="btn-6-1">Buy Now</button></a> -->
+                                <a href=""><i class="fa-regular fa-heart" id="wishlist-add"></i></a>
+                                <a href=""><i class="fa-solid fa-heart" style="color: #0fc72e;"
+                                        id="wishlist-add"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" id="cl-19">
+                        <div class="img-box-1">
+                            <img src="product-img-1.jpg" alt="" id="img-12">
+                            <a href="">
+                                <h5>Herbal Green Tea Powder</h5>
+                            </a>
+                            <p style="text-decoration-line: line-through; color: red;">Rs.107.00</p>
+                            <p>Rs.47.00</p>
+                            <div class="drop-box">
+                                <a href=""><button class="btn-6">Buy Now</button></a><br>
+                                <!-- <a href=""><button class="btn-6-1">Buy Now</button></a> -->
+                                <a href=""><i class="fa-regular fa-heart" id="wishlist-add"></i></a>
+                                <a href=""><i class="fa-solid fa-heart" style="color: #0fc72e;"
+                                        id="wishlist-add"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" id="cl-19">
+                        <div class="img-box-1">
+                            <img src="product-img-2.jpg" alt="" id="img-12">
+                            <a href="">
+                                <h5>Controls Blood Sugar Levels</h5>
+                            </a>
+                            <p style="text-decoration-line: line-through; color: red;">Rs.205.00</p>
+                            <p>Rs.102.00</p>
+                            <div class="drop-box">
+                                <a href=""><button class="btn-6">Buy Now</button></a><br>
+                                <!-- <a href=""><button class="btn-6-1">Buy Now</button></a> -->
+                                <a href=""><i class="fa-regular fa-heart" id="wishlist-add"></i></a>
+                                <a href=""><i class="fa-solid fa-heart" style="color: #0fc72e;"
+                                        id="wishlist-add"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" id="cl-19">
+                        <div class="img-box-1">
+                            <img src="product-img-3.jpg" alt="" id="img-12">
+                            <a href="">
+                                <h5>Relieves Constipation & Improves Digestion</h5>
+                            </a>
+                            <p style="text-decoration-line: line-through; color: red;">Rs.107.00</p>
+                            <p>Rs.98.00</p>
+                            <div class="drop-box">
+                                <a href=""><button class="btn-6">Buy Now</button></a><br>
+                                <!-- <a href=""><button class="btn-6-1">Buy Now</button></a> -->
+                                <a href=""><i class="fa-regular fa-heart" id="wishlist-add"></i></a>
+                                <a href=""><i class="fa-solid fa-heart" style="color: #0fc72e;"
+                                        id="wishlist-add"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ----------------------section-7------------------------------------------ -->
+
+    <section class="container-fluid" id="cnt-fld-7">
+        <div class="container-sm" id="cnt-7">
+            <div class="row" id="rw-18">
+                <div class="col-sm" id="cl-20">
+                    <div class="row" id="rw-19">
+                        <div class="col-sm-5" id="cl-22">
+                            <div class="box-10">
+                                <h5>FREE DELIVERY</h5>
+                                <h3><strong>WINTER</strong><br>VACATION</h3>
+                                <p>Special Offers 50% Discount</p>
+                                <a href=""><button class="btn-7">buy Now</button></a>
+                            </div>
+                        </div>
+                        <div class="col-sm-7" id="cl-23">
+                            <img src="section-7-right-left-img1.jpg" alt="" id="img-14">
+                        </div>
+                    </div>
+                    <div class="row" id="rw-20">
+                        <div class="col-sm-7" id="cl-24">
+                            <img src="section-7-right-left-img2.jpg" alt="" id="img-14">
+                        </div>
+                        <div class="col-sm-5" id="cl-25">
+                            <div class="box-10">
+                                <h5>FREE DELIVERY</h5>
+                                <h3><strong>WINTER</strong><br>VACATION</h3>
+                                <p>Special Offers 50% Discount</p>
+                                <a href=""><button class="btn-7">buy Now</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm" id="cl-21">
+                    <img src="section-7-right-img.png" alt="" id="img-chili">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ----------------------section-8------------------------------------------ -->
+
+    <section class="container-fluid" id="cnt-fld-8">
+        <div class="container-sm" id="cnt-8">
+            <div class="row" id="rw-21">
+                <div class="col-sm" id="cl-26">
+                    <div class="box-11">
+                        <p>FREE DELIVERY</p>
+                        <h3><strong>Our Areas of Focus</strong></h3>
+                    </div>
+                    <div class="col-sm" id="cl-28">
+                        <div class="box-12">
+                            Discovery & development
+                        </div>
+                    </div><br>
+                    <div class="col-sm" id="cl-28">
+                        <div class="box-12">
+                            Cardio-metabolic disorders
+                        </div>
+                    </div><br>
+                    <div class="col-sm" id="cl-28">
+                        <div class="box-12">
+                            Sustainability in Naturopathy
+                        </div>
+                    </div><br>
+                    <div class="col-sm" id="cl-28">
+                        <div class="box-12">
+                            Naturopathy care in a COVID-19
+                        </div>
+                    </div><br>
+                    <div class="col-sm" id="cl-28">
+                        <div class="box-12">
+                            Improving health globally
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm" id="cl-27">
+                    <div class="box-13">
+                        <p>FREE DELIVERY</p>
+                        <h3><strong>Our Areas of Focus</strong></h3>
+                    </div>
+                    <div class="row" id="rw-22">
+                        <div class="box-14">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, nostrum, ut dignissimos
+                            enim impedit
+                            at quisquam rerum sed possimus obcaecati id. Incidunt laboriosam aliquid voluptate
+                            doloremque debitis
+                            commodi, nisi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque pariatur
+                            nihil earum
+                            fugiat animi fugit unde nulla adipisci harum atque nesciunt magnam soluta exercitationem
+                            excepturi
+                            corrupti quaerat, repudiandae sint provident.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ----------------------section-9------------------------------------------ -->
+
+    <section class="container-fluid" id="cnt-fld-9">
+        <div class="container-sm" id="cnt-9">
+            <div class="box-11">
+                <p>FREE DELIVERY</p>
+                <h3><strong>Our Areas of Focus</strong></h3>
+            </div>
+            <div class="row" id="rw-23">
+                <div class="col-sm" id="cl-33">
+                    <div class="row" id="rw-24">
+                        <img src="post-img3.jpg" alt="" id="img-15">
+                    </div>
+                    <div class="row" id="rw-25">
+                        <div class="box-15">
+                            <h3>Highest Quality Herbal and Ayurveda Product</h3>
+                            <h5>FREE DELIVERY</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt .</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm" id="cl-33">
+                    <div class="row" id="rw-24">
+                        <img src="post-img2.jpg" alt="" id="img-15">
+                    </div>
+                    <div class="row" id="rw-25">
+                        <div class="box-15">
+                            <h3>Highest Quality Herbal and Ayurveda Product</h3>
+                            <h5>FREE DELIVERY</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt .</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm" id="cl-33">
+                    <div class="row" id="rw-24">
+                        <img src="post-img1.jpg" alt="" id="img-15">
+                    </div>
+                    <div class="row" id="rw-25">
+                        <div class="box-15">
+                            <h3>Highest Quality Herbal and Ayurveda Product</h3>
+                            <h5>FREE DELIVERY</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt .</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ----------------------section-10------------------------------------------ -->
+
+    <section class="container-fluid" id="cnt-fld-10">
+        <div class="box-16">
+            <h2>Subscribe our news</h2><br>
+            <div class="box-17">
+                <span> <input type="email" placeholder="Enter You Email" id="search-btn"><button
+                        id="btn-8">Search</button></span>
+
+            </div>
+        </div>
+        <div class="container" id="cnt-10">
+            <div class="row" id="rw-26">
+                <div class="col-sm" id="cl-34">
+                    <h3>Quick Link</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">Abotu</a></li>
+                        <li><a href="service.html">Supplyier</a></li>
+                        <li><a href="productpage2.html">Product</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm" id="cl-34">
+                    <img src="footer-logo.png" alt=""><br>
+                    <p>Nunc condimentum purus conse quat antvehicula, a porttitor nibh facilisis. Etiam id sagittielt
+                        sceleri sque
+                        urnaauris vitae.</p>
+                    <div class="box-18">
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f fa-lg"
+                                id="facbook-icon"></i></a>
+                        <a href="https://twitter.com/i/flow/login"><i class="fa-brands fa-twitter fa-lg"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram fa-lg"></i></a>
+                        <a href="https://www.youtube.com/"><i class="fa-brands fa-square-youtube fa-lg"></i></a>
+                        <a href="https://in.pinterest.com/"><i class="fa-brands fa-pinterest fa-lg"></i></a>
+                        <a href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin-in fa-lg"></i></a>
+                    </div>
+
+                </div>
+                <div class="col-sm" id="cl-34">
+                    <h3 style="margin-top: -50px;">Contact Info</h3><br>
+                    <p id="p-1" style="inline-size: 200px;">Street 238,52 tempor
+                        Donec ultricies mattis nulla
+                        risus tristique ut.</p>
+                    <h4>+1 500 000 0000
+                        <br>
+                        demo@lorem.com
+                    </h4>
+                </div>
+            </div>
+            <p class="p">© Copyright 2023 SKT Naturopathy. - Design by Chax Roy</p>
+        </div>
+
+    </section>
+</body>
+
+</html>
